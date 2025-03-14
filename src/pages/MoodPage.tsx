@@ -37,8 +37,8 @@ const MoodPage = () => {
         <h1 className="text-3xl font-display font-bold mb-4">How are you feeling?</h1>
         <p className="text-muted-foreground">
           {todayEntry 
-            ? 'You've already logged your mood today. You can view your trends below.'
-            : 'Track your emotions and see patterns over time.'}
+            ? "You've already logged your mood today. You can view your trends below."
+            : "Track your emotions and see patterns over time."}
         </p>
       </div>
       
@@ -52,7 +52,7 @@ const MoodPage = () => {
             onClick={() => setShowTracker(true)} 
             className="glass-morphism"
           >
-            {todayEntry ? 'Update Today's Mood' : 'Track Today's Mood'}
+            {todayEntry ? "Update Today's Mood" : "Track Today's Mood"}
           </Button>
         </div>
       )}
