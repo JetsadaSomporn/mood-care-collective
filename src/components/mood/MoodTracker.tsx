@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
 import { StaggeredFade } from '@/utils/animations';
-import { Smile, SmilePlus, Meh, Frown, FrownPlus } from 'lucide-react';
+import { Smile, ThumbsUp, Meh, Frown, AngryIcon } from 'lucide-react';
 
 type Mood = 'great' | 'good' | 'okay' | 'bad' | 'awful';
 
@@ -17,11 +17,11 @@ const MoodTracker = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const moodOptions = [
-    { value: 'great', icon: SmilePlus, label: 'Great', color: 'text-green-500' },
+    { value: 'great', icon: ThumbsUp, label: 'Great', color: 'text-green-500' },
     { value: 'good', icon: Smile, label: 'Good', color: 'text-emerald-400' },
     { value: 'okay', icon: Meh, label: 'Okay', color: 'text-amber-400' },
     { value: 'bad', icon: Frown, label: 'Bad', color: 'text-orange-500' },
-    { value: 'awful', icon: FrownPlus, label: 'Awful', color: 'text-red-500' },
+    { value: 'awful', icon: AngryIcon, label: 'Awful', color: 'text-red-500' },
   ];
 
   const handleSubmit = () => {
